@@ -42,6 +42,9 @@ const teamMembers = [
 const rigaEl = document.getElementById("riga");
 // console.log(rigaEl);
 
+// creo una variabile d'appoggio
+let newRiga = "";
+
 // ciclo for trovare i singoli membri del team
 for (let i = 0; i < teamMembers.length; i++) {
      const singleMember = teamMembers[i];
@@ -74,11 +77,11 @@ const markupCard = `
     </div>
   </div>
 `
-
-console.log(markupCard);
+// la variabile d'appoggio ora contiene tutte le card
+newRiga += markupCard;
+console.log(newRiga);
 
 }
-
 
 
 
