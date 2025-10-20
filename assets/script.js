@@ -37,6 +37,34 @@ const teamMembers = [
   }
 ];
 
+// creo una costante con il contenuto della card 
+const markupCard = `
+  <div class="col-md-4">
+    <div class="card mb-3 bg-dark text-white">
+      <div class="row g-0">
+ 
+        <div class="col-md-4">
+          <img src="./assets/img/male1.png"
+             class="img-fluid rounded-start" alt="...">
+        </div>
+
+        <div class="col-md-8">
+          <div class="card-body">
+            <h5 class="card-title">Marco Bianchi</h5>
+              <p class="card-text">Designer</p>
+                <a href="#" class="card-text">marcobianchi@team.com</a>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </div>
+`
+// seleziono elemento della DOM
+const rigaEl = document.getElementById("riga");
+console.log(rigaEl);
+
+
 /*
 Dato un array di oggetti rappresentante un team di un’azienda, creare una pagina dedicata  in cui mostrare una card per ciascun componente.
 (trovate l’array del team all’interno della cartella in allegato)
