@@ -64,6 +64,13 @@ const markupCard = `
 const rigaEl = document.getElementById("riga");
 console.log(rigaEl);
 
+// ciclo for trovare i singoli membri del team
+for (let i = 0; i < teamMembers.length; i++) {
+     const singleMember = teamMembers[i];
+     console.log(singleMember);
+}
+
+
 
 /*
 Dato un array di oggetti rappresentante un team di un’azienda, creare una pagina dedicata  in cui mostrare una card per ciascun componente.
