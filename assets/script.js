@@ -62,14 +62,19 @@ const markupCard = `
 `
 // seleziono elemento della DOM
 const rigaEl = document.getElementById("riga");
-console.log(rigaEl);
+// console.log(rigaEl);
 
 // ciclo for trovare i singoli membri del team
 for (let i = 0; i < teamMembers.length; i++) {
      const singleMember = teamMembers[i];
-     console.log(singleMember);
-}
+     // console.log(singleMember);
 
+// scompongo l'oggetto per aver accesso alle singole proprietà
+const {name, role, email, img} = singleMember
+ console.log(name, role, email, img);
+
+
+}
 
 
 /*
