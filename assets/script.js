@@ -77,11 +77,16 @@ const markupCard = `
     </div>
   </div>
 `
+
+
 // la variabile d'appoggio ora contiene tutte le card
 newRiga += markupCard;
+}
+
 console.log(newRiga);
 
-}
+//stampo il contenuto in pagina
+rigaEl.innerHTML = newRiga;
 
 
 
