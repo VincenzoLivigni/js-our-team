@@ -37,29 +37,7 @@ const teamMembers = [
   }
 ];
 
-// creo una costante con il contenuto della card 
-const markupCard = `
-  <div class="col-md-4">
-    <div class="card mb-3 bg-dark text-white">
-      <div class="row g-0">
- 
-        <div class="col-md-4">
-          <img src="./assets/img/male1.png"
-             class="img-fluid rounded-start" alt="...">
-        </div>
 
-        <div class="col-md-8">
-          <div class="card-body">
-            <h5 class="card-title">Marco Bianchi</h5>
-              <p class="card-text">Designer</p>
-                <a href="#" class="card-text">marcobianchi@team.com</a>
-          </div>
-        </div>
-
-      </div>
-    </div>
-  </div>
-`
 // seleziono elemento della DOM
 const rigaEl = document.getElementById("riga");
 // console.log(rigaEl);
@@ -71,10 +49,37 @@ for (let i = 0; i < teamMembers.length; i++) {
 
 // scompongo l'oggetto per aver accesso alle singole proprietà
 const {name, role, email, img} = singleMember
- console.log(name, role, email, img);
+console.log(name, role, email, img);
 
+// inserisco le variabili appena create nella costante in modo da sostituire ad ogni iterazione le proprietà della card
+const markupCard = `
+  <div class="col-md-4">
+    <div class="card mb-3 bg-dark text-white">
+      <div class="row g-0">
+ 
+        <div class="col-md-4">
+          <img src="./assets/img/male1.png"
+             class="${img}>
+        </div>
+
+        <div class="col-md-8">
+          <div class="card-body">
+            <h5 class="card-title">${name}</h5>
+              <p class="card-text">${role}</p>
+                <a href="#" class="card-text">${email}</a>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </div>
+`
+
+console.log(markupCard);
 
 }
+
+
 
 
 /*
